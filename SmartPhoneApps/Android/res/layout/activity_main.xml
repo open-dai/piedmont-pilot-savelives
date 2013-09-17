@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/testModeMessageId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:background="@color/textColor"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/testModeMessage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/SaveMeTheme.Widget.CallButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="118" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/SaveMeTheme.Widget.CallButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Macro 1" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/SaveMeTheme.Widget.CallButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Macro 2" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/SaveMeTheme.Widget.CallButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:text="Macro 3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/dashed_rule" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Rilevamento della posizione in corso..."
+            android:textAppearance="@style/SaveMeTheme.lblDefault" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_rule" />
+    </LinearLayout>
+
+</LinearLayout>

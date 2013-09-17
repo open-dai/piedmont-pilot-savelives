@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:defaultValue="@string/default_phone_number"
+        android:key="PhoneNumber"
+        android:title="@string/phone_number" />
+    <EditTextPreference
+        android:defaultValue="@string/default_csi_id"
+        android:key="CSI_ID"
+        android:title="@string/id_csi" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="TestMode"
+        android:title="@string/test_mode" />
+
+    <Preference
+        android:key="VersionText"
+        android:title="@string/version" />
+
+</PreferenceScreen>

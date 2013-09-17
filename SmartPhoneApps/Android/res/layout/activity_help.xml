@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelpActivity" >
+
+    <TextView
+        android:id="@+id/lblDisclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam erat, suscipit ut pretium id, accumsan quis neque. In ultrices euismod mollis. Integer at eros purus, viverra accumsan purus. Mauris consectetur pellentesque lectus, sit amet dignissim felis iaculis eu. Fusce augue elit, auctor ac suscipit at, varius eu risus. Vivamus pharetra, sem at semper interdum, urna velit ullamcorper dui, non molestie elit nisl sed sapien. Fusce eget erat vel mi mattis condimentum. Nam quis elit augue. Fusce orci ipsum, laoreet ut porta vitae, tempor sed sem. In hac habitasse platea dictumst. Integer sed justo ac lectus feugiat facilisis ac id sapien. Aliquam erat volutpat." />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bkg_buttonsbox"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/close" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/showHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblDisclaimer"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dont_show_at_start" />
+
+</RelativeLayout>

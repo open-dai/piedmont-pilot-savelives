@@ -1,0 +1,33 @@
+2013/09/16 12:03:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /var/www/html/saveus/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/saveus/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/html/saveus/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/html/saveus/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/loadin...')
+#3 /var/www/html/saveus/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/saveus/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/loading.gif
+HTTP_REFERER=http://194.116.110.126/index.php/site/page?view=legale
+---
+2013/09/16 12:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /var/www/html/saveus/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/saveus/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/html/saveus/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/html/saveus/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/close....')
+#3 /var/www/html/saveus/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/saveus/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/close.png
+HTTP_REFERER=http://194.116.110.126/index.php/site/page?view=about
+---
+2013/09/16 12:03:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in /var/www/html/saveus/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/saveus/framework/web/CController.php(270): CController->missingAction('img')
+#1 /var/www/html/saveus/framework/web/CWebApplication.php(282): CController->run('img')
+#2 /var/www/html/saveus/framework/web/CWebApplication.php(141): CWebApplication->runController('site/img/loadin...')
+#3 /var/www/html/saveus/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/saveus/webapp/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/img/loading.gif
+HTTP_REFERER=http://194.116.110.126/index.php/site/page?view=about
+---
