@@ -46,7 +46,7 @@ if(isset($_GET['action']))
 
 <div class="span5 loginform">
 <p> <?php echo Yum::t(
-		'Please fill out the following form with your login credentials:'); ?>gioppo </p>
+		'Please fill out the following form with your login credentials:'); ?> </p>
 
 <div class="row">
 	<?php 

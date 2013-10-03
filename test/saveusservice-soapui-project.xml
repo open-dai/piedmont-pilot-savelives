@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="saveusservice" resourceRoot="" soapui-version="4.5.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="SaveusServiceSoap" type="wsdl" bindingName="{http://194.116.110.126:81/ws/}SaveusServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://194.116.110.126:81/ws/saveusservice.php?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://194.116.110.126:81/ws/saveusservice.php?WSDL"><con:part><con:url>http://194.116.110.126:81/ws/saveusservice.php?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://194.116.110.126:81/ws/" xmlns:tns="http://194.116.110.126:81/ws/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <s:schema targetNamespace="http://194.116.110.126:81/ws/">
+      <s:complexType name="processtype">
+        <s:sequence>
+          <s:element name="process">
+            <s:complexType>
+              <s:sequence>
+                <s:element name="level" maxOccurs="unbounded" minOccurs="0">
+                  <s:complexType>
+                    <s:sequence>
+                      <s:element name="action">
+                        <s:complexType>
+                          <s:sequence>
+                            <s:element type="s:string" name="mailaddress"/>
+                            <s:element type="s:string" name="mailbody"/>
+                          </s:sequence>
+                          <s:attribute type="s:int" name="id" use="optional"/>
+                        </s:complexType>
+                      </s:element>
+                    </s:sequence>
+                    <s:attribute type="s:int" name="id" use="optional"/>
+                  </s:complexType>
+                </s:element>
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getProcessSoapIn">
+    <wsdl:part name="id" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="getProcessSoapOut">
+    <wsdl:part name="return" type="tns:processtype"/>
+  </wsdl:message>
+  <wsdl:message name="setAccidentSoapIn">
+    <wsdl:part name="time" type="s:string"/>
+    <wsdl:part name="longitude" type="s:string"/>
+    <wsdl:part name="latitude" type="s:string"/>
+    <wsdl:part name="onbehalf" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="setAccidentSoapOut">
+    <wsdl:part name="return" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="sendMailSoapIn">
+    <wsdl:part name="message" type="s:string"/>
+    <wsdl:part name="address" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="sendMailSoapOut">
+    <wsdl:part name="return" type="s:string"/>
+  </wsdl:message>
+  <wsdl:portType name="SaveusServiceSoap">
+    <wsdl:operation name="getProcess">
+      <wsdl:documentation>This method get a user process</wsdl:documentation>
+      <wsdl:input message="tns:getProcessSoapIn"/>
+      <wsdl:output message="tns:getProcessSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="setAccident" parameterOrder="time longitude latitude">
+      <wsdl:documentation>This method store an accident</wsdl:documentation>
+      <wsdl:input message="tns:setAccidentSoapIn"/>
+      <wsdl:output message="tns:setAccidentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendMail" parameterOrder="message address">
+      <wsdl:documentation>This method send a mail</wsdl:documentation>
+      <wsdl:input message="tns:sendMailSoapIn"/>
+      <wsdl:output message="tns:sendMailSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SaveusServiceSoap" type="tns:SaveusServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+    <wsdl:operation name="getProcess">
+      <soap:operation soapAction="http://194.116.110.126:81/ws/getProcess"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="id"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="return"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setAccident">
+      <soap:operation soapAction="http://194.116.110.126:81/ws/setAccident"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="time longitude latitude"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="return"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendMail">
+      <soap:operation soapAction="http://194.116.110.126:81/ws/sendMail"/>
+      <wsdl:input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="message address"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://194.116.110.126:81/ws/" parts="return"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SaveusService">
+    <wsdl:port name="SaveusServiceSoap" binding="tns:SaveusServiceSoap">
+      <soap:address location="http://194.116.110.126:81/ws/saveusservice.php"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://194.116.110.126:81/ws/saveusservice.php</con:endpoint></con:endpoints><con:operation isOneWay="false" action="http://194.116.110.126:81/ws/getProcess" name="getProcess" bindingOperationName="getProcess" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://194.116.110.126:81/ws/saveusservice.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://194.116.110.126:81/ws/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getProcess soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <id xsi:type="xsd:string">?</id>
+      </ws:getProcess>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://194.116.110.126:81/ws/getProcess"/></con:call></con:operation><con:operation isOneWay="false" action="http://194.116.110.126:81/ws/sendMail" name="sendMail" bindingOperationName="sendMail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://194.116.110.126:81/ws/saveusservice.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://194.116.110.126:81/ws/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:sendMail soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <message xsi:type="xsd:string">oook</message>
+         <address xsi:type="xsd:string">gioppoluca@libero.it</address>
+      </ws:sendMail>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://194.116.110.126:81/ws/sendMail"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="http://194.116.110.126:81/ws/setAccident" name="setAccident" bindingOperationName="setAccident" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://194.116.110.126:81/ws/saveusservice.php</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://194.116.110.126:81/ws/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:setAccident soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+         <time xsi:type="xsd:string">?</time>
+         <longitude xsi:type="xsd:string">?</longitude>
+         <latitude xsi:type="xsd:string">?</latitude>
+      </ws:setAccident>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://194.116.110.126:81/ws/setAccident"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/></con:soapui-project>
