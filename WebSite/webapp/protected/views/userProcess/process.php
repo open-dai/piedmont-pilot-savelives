@@ -77,22 +77,22 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
           <h3 class="header">Personalizza le azioni dei pulsanti</h3>
           <ul class="nav nav-tabs" id="myTab">
             <li class="active">
-              <a href="#level1" data-toggle="tab">Livello 1</a>
+              <a href="#level1" data-toggle="tab">118</a>
             </li>
             <li>
-              <a href="#level2" data-toggle="tab">Livello 2</a>
+              <a href="#level2" data-toggle="tab">Incidente</a>
             </li>
             <li>
-              <a href="#level3" data-toggle="tab">Livello 3</a>
+              <a href="#level3" data-toggle="tab">Messaggio</a>
             </li>
             <li>
-              <a href="#level4" data-toggle="tab">Livello 4</a>
+              <a href="#level4" data-toggle="tab">Segnala</a>
             </li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="level1">
-            <h3>Livello 1</h3>Questo livello corrisponde al massimo livello di emergenza, verranno eseguite le azioni indicate,
-            mandata la segnalazione dell&#39;incidente e effettuata la chiamata al 118
+            <h3>118</h3>Questo livello corrisponde al massimo livello di emergenza, verranno eseguite le azioni indicate,
+            mandata la segnalazione dell&#39;incidente e effettuata la chiamata al 118<br/>
             <div class="span7">
      <!--           <h3 class="header">Azioni</h3> -->
               <div class="accordion" id="accordion1">
@@ -102,36 +102,16 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
                   </div>
                   <div id="collapseOne" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. 
-                    <input name="mail11" type="email"
-                    value="<?php $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@id=1]/mailaddress');echo $mail11[0];?>" id="mail11" maxlength="30" /> 
-                    <textarea rows="2" cols="40" name="mailbody11" id="mailbody11"><?php $mailbody11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@id=1]/mailbody');echo $mailbody11[0];?></textarea></div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">Collapsible
-                    Group Item #2</a>
-                  </div>
-                  <div id="collapseTwo" class="accordion-body collapse">
-                    <div class="accordion-inner">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</div>
-                  </div>
-                </div>
-                <div class="accordion-group">
-                  <div class="accordion-heading">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">Collapsible
-                    Group Item #3</a>
-                  </div>
-                  <div id="collapseThree" class="accordion-body collapse">
-                    <div class="accordion-inner">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</div>
+                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta.<br/>
+                    e-mail:<br/><input name="mail11" type="email"
+                    value="<?php $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@id=1]/mailaddress');echo $mail11[0];?>" id="mail11" maxlength="30" /> <br/>
+                    messaggio<br/><textarea rows="2" cols="40" name="mailbody11" id="mailbody11"><?php $mailbody11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@id=1]/mailbody');echo $mailbody11[0];?></textarea></div>
                   </div>
                 </div>
               </div>
             </div></div>
             <div class="tab-pane" id="level2">
-            <h3>Livello 2</h3>Questo livello ad un livello di emergenza tale da non richiedere l'intervento del 118, ma consente di scatenare le azioni opportune
+            <h3>Incidente</h3>Questo livello ad un livello di emergenza tale da non richiedere l'intervento del 118, ma consente di scatenare le azioni opportune<br/>
             <div class="span7">
    <!--           <h3 class="header">Azioni</h3> -->
               <div class="accordion" id="accordion2">
@@ -141,10 +121,10 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
                   </div>
                   <div id="collapseFour" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. 
-                    <input name="mail21" type="email"
-                    value="<?php $mail21 = (is_null($process))?'':$process->xpath('/process/level[@id=2]/action[@id=1]/mailaddress');echo $mail21[0];?>" id="mail21" maxlength="30" /> 
-                    <textarea rows="2" cols="40" name="mailbody11" id="mailbody21">
+                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta.<br/>
+                    e-mail:<br/><input name="mail21" type="email"
+                    value="<?php $mail21 = (is_null($process))?'':$process->xpath('/process/level[@id=2]/action[@id=1]/mailaddress');echo $mail21[0];?>" id="mail21" maxlength="30" /> <br/>
+                    messaggio<br/><textarea rows="2" cols="40" name="mailbody11" id="mailbody21">
                       <?php $mailbody21 = (is_null($process))?'':$process->xpath('/process/level[@id=2]/action[@id=1]/mailbody');echo $mailbody21[0];?>
                     </textarea></div>
                   </div>
@@ -152,7 +132,7 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
               </div>
             </div></div>
             <div class="tab-pane" id="level3">
-            <h3>Livello 3</h3>Questo livello ad un livello è utile per segnalare situazioni di imprevisti da non considerarsi incidenti, che però consentono di attivare comunque delle azioni
+            <h3>Messaggio</h3>Questo livello ad un livello &egrave; utile per segnalare situazioni di imprevisti da non considerarsi incidenti, che per&ograve; consentono di attivare comunque delle azioni<br/>
             <div class="span7">
     <!--           <h3 class="header">Azioni</h3> -->
               <div class="accordion" id="accordion3">
@@ -162,10 +142,10 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
                   </div>
                   <div id="collapseFive" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. 
-                    <input name="mail31" type="email"
-                    value="<?php $mail31 = (is_null($process))?'':$process->xpath('/process/level[@id=3]/action[@id=1]/mailaddress');echo $mail31[0];?>" id="mail31" maxlength="30" /> 
-                    <textarea rows="2" cols="40" name="mailbody11" id="mailbody31">
+                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. <br/>
+                    e-mail:<br/><input name="mail31" type="email"
+                    value="<?php $mail31 = (is_null($process))?'':$process->xpath('/process/level[@id=3]/action[@id=1]/mailaddress');echo $mail31[0];?>" id="mail31" maxlength="30" /> <br/>
+                    messaggio<br/><textarea rows="2" cols="40" name="mailbody11" id="mailbody31">
                       <?php $mailbody31 = (is_null($process))?'':$process->xpath('/process/level[@id=3]/action[@id=1]/mailbody');echo $mailbody31[0];?>
                     </textarea></div>
                   </div>
@@ -173,7 +153,7 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
               </div>
             </div></div>
             <div class="tab-pane" id="level4">
-            <h3>Livello 4</h3>Questo livello consente di segnalare un incidente cui si sta assistendo in modo da allertare il sistema sulla presenza di un incidente.
+            <h3>Segnala</h3>Questo livello consente di segnalare un incidente cui si sta assistendo in modo da allertare il sistema sulla presenza di un incidente.<br/>
             <div class="span7">
     <!--           <h3 class="header">Azioni</h3> -->
               <div class="accordion" id="accordion4">
@@ -183,10 +163,10 @@ $mail11 = (is_null($process))?'':$process->xpath('/process/level[@id=1]/action[@
                   </div>
                   <div id="collapseSix" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. 
-                    <input name="mail41" type="email"
-                    value="<?php $mail41 = (is_null($process))?'':$process->xpath('/process/level[@id=4]/action[@id=1]/mailaddress');echo $mail41[0];?>" id="mail41" maxlength="30" /> 
-                    <textarea rows="2" cols="40" name="mailbody41" id="mailbody41">
+                    <h4>Invio mail</h4>Con questa azione si invia una mail con il testo indicato al singolo indirizzo di posta. <br/>
+                    e-mail:<br/><input name="mail41" type="email"
+                    value="<?php $mail41 = (is_null($process))?'':$process->xpath('/process/level[@id=4]/action[@id=1]/mailaddress');echo $mail41[0];?>" id="mail41" maxlength="30" /> <br/>
+                    messaggio<br/><textarea rows="2" cols="40" name="mailbody41" id="mailbody41">
                       <?php $mailbody41 = (is_null($process))?'':$process->xpath('/process/level[@id=4]/action[@id=1]/mailbody');echo $mailbody41[0];?>
                     </textarea></div>
                   </div>

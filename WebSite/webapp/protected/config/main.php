@@ -9,6 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
 	'theme' => 'hebo',
+	'sourceLanguage'=>'it',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -25,7 +26,7 @@ return array(
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'gioppo',
+			'password'=>'mypass',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
@@ -45,14 +46,13 @@ return array(
 							'SMTPDebug' => false,          // enables SMTP debug information (for testing)
 							'SMTPAuth' => true,            // enable SMTP authentication
 							'SMTPSecure' => '',         // sets the prefix to the servier
-							'Host' => '194.116.110.17',    // sets GMAIL as the SMTP server
 							'Port' => 25,                   // set the SMTP port for the GMAIL server
 							'Username' => 'saveus@cloudlabcsi.eu',  // GMAIL username
-							'Password' => '1!Saveus',        // GMAIL password
+							'Password' => '---',        // GMAIL password
 					),
 					'msgOptions'=>array(
-							'fromName'=>'saveus',
-							'toName'=>'New user',
+							'fromName'=>'SaveUs Registration System',
+							'toName'=>'Nuovo Utente',
 					),
 			),
 		),
@@ -131,7 +131,7 @@ return array(
 			'connectionString' => 'mysql:host=wso2mysql.test.italy.cloudlabcsi.local;dbname=saveus',
 			'emulatePrepare' => true,
 			'username' => 'saveus',
-			'password' => '$aveuS!1',
+			'password' => '-------',
 			'charset' => 'utf8',
 			'tablePrefix' => '',
 			        'enableParamLogging' => true,

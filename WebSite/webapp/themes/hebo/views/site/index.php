@@ -16,23 +16,27 @@
           <h1>SaveMe Ottieni l'aiuto che ti serve</h1>
         </div>
     </div>
-    	<div class="row-fluid">
-           Save Us &egrave; l&rsquo;applicazione che pu&ograve; salvarti la vita, ed &egrave; un esempio di smart use delle informazioni che coinvolge le pubbliche amministrazioni e i dati in loro possesso. Nasce nell&rsquo;ambito del progetto Open-DAI, il progetto europeo per la realizzazione delle innovazioni tecnologiche utili alle pubbliche amministrazioni per la condivisione di open data, per la creazione di servizi innovativi e l&rsquo;apertura della conoscenza. E&rsquo; realizzato da Regione Piemonte, partner e capofila del progetto Open-DAI.
+    	<div class="row-fluid"><br/>
+           SaveMe &egrave; l&rsquo;applicazione di social collaboration che pu&ograve; salvarti la vita, ed &egrave; un esempio di smart use delle informazioni che coinvolge le pubbliche amministrazioni e i dati in loro possesso. Nasce nell&rsquo;ambito del progetto Open-DAI, il progetto europeo per la realizzazione delle innovazioni tecnologiche utili alle pubbliche amministrazioni per la condivisione di open data, per la creazione di servizi innovativi e l&rsquo;apertura della conoscenza. E&rsquo; realizzato da Regione Piemonte, partner e capofila del progetto Open-DAI.
         </div>
         
         <hr>
         
         <div class="row-fluid">
             <div class="span9">
+				<blockquote>
+                  <h2>Chiamare il 118 con 2 &quot;tap&quot;</h2>
+                  <small>ogni istante conta</small>
+                </blockquote>
                 <blockquote>
-                  <h2>Testo di marketing di uno che è stato salvato dall'app</h2>
-                  <small>etc<cite title="Source Title"> - ccc</cite></small>
+                  <h2>Avere i dati in tempo reale degli incidenti pu&ograve; aiutare a migliorare il traffico</h2>
+                  <small>ridurre gli ingorghi riduce gli incidenti</small>
                 </blockquote>
             </div>
             
             <div class="span3" style="text-align:center;">
             
-            <h3 class="text-error">Cosa aspetti scarica l'app!!</h3>
+            <h3 class="text-error">Scarica l'app!!</h3>
                         
 			<a href="https://play.google.com/store/apps/details?id=saveus">
   <img alt="Android app on Google Play"
