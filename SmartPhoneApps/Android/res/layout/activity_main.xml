@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Macro 1" />
+            android:text="Incidente" />
 
         <Button
             android:id="@+id/button3"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Macro 2" />
+            android:text="Messaggio" />
 
         <Button
             android:id="@+id/button4"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="30dp"
-            android:text="Macro 3" />
+            android:text="Segnala" />
 
         <View
             android:layout_width="match_parent"
