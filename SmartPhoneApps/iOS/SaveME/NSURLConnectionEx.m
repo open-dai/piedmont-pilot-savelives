@@ -2,8 +2,8 @@
 //  NSURLConnectionEx.m
 //  SaveME
 //
-//  Created by sig sig on 07/12/12.
-//  Copyright 2012 __MyCompanyName__. All rights reserved.
+//  Created by sig sig on 07/06/13.
+//  Copyright 2013 CSI-Piemonte. All rights reserved.
 //
 
 #import "NSURLConnectionEx.h"
